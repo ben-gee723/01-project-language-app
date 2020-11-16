@@ -1,0 +1,96 @@
+$mainBg: #20272a;
+$navBg: #1d2226;
+$inputBg: #3c6862;
+$btnBg: #184b43;
+
+*{
+    font-family: monospace;
+}
+
+
+.App{
+    background-color: $mainBg;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    .body{
+        display: flexbox;
+        width: 56%;
+        height: 100%;
+        margin: 10px auto;
+        background-color: white;
+    h1{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+        padding: 0;
+    }
+    .main{
+        display: flex;
+        justify-content: flex-start;
+        padding: 10px;
+        flex-wrap: wrap;
+        .newCard{
+            border: 1px #184b43 solid;
+            border-radius: 20px;
+            margin: 10px ;
+            padding: 5px;
+            width: 200px;
+            Height: 300px;
+            img{
+                width: 70%;
+                margin: 5px auto;
+                align-self: center;
+            }
+            .card{
+                width: 95%;
+                padding: 5px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 5px auto;
+            }
+            .addedCard{
+                width: 100%;
+                line-height: 10px;
+                padding: 0px 5px;
+                h3{
+                    margin: 0;
+                    padding: 5px;
+                    text-align: center;
+                }
+                label{
+                    font-weight: bold;
+                }
+                p, input{
+                    border: 1px solid;
+                    border-radius: 15px;
+                    margin: 5px auto;
+                    padding: 5px;
+                }
+                .btns{
+                    display: flex;
+                    justify-content: space-between;
+                    align-content: flex-end;
+                }
+                .btn{
+                    display: flex;
+                    align-content: flex-end;
+                }
+                .file{
+                    border: none;
+                    border-radius: 0px;
+                    margin: 5px auto;
+                    padding: 0px;
+                    width: 95%;
+                }
+            }
+        }
+        
+        .input-item{
+            margin: 0;
+            border-radius: 15px;
+        }
+    }
+    }
+}
